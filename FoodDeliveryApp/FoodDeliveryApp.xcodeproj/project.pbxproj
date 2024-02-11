@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A468D4A32B78E1B500220D40 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A468D4A22B78E1B500220D40 /* OnboardingViewController.swift */; };
+		A468D4A52B78E2A100220D40 /* OnboardingViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A468D4A42B78E2A100220D40 /* OnboardingViewPresenter.swift */; };
 		A48ADDE62B7464DC00CE38F9 /* Roboto in Resources */ = {isa = PBXBuildFile; fileRef = A48ADDE52B7464DC00CE38F9 /* Roboto */; };
 		A48ADDE92B7469F200CE38F9 /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48ADDE82B7469F200CE38F9 /* UIFont+Extension.swift */; };
 		A48ADDEB2B75BE6C00CE38F9 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48ADDEA2B75BE6C00CE38F9 /* UIColor+Extension.swift */; };
@@ -27,6 +29,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A468D4A22B78E1B500220D40 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		A468D4A42B78E2A100220D40 /* OnboardingViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewPresenter.swift; sourceTree = "<group>"; };
 		A48ADDE52B7464DC00CE38F9 /* Roboto */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Roboto; sourceTree = "<group>"; };
 		A48ADDE82B7469F200CE38F9 /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
 		A48ADDEA2B75BE6C00CE38F9 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
@@ -59,6 +63,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A468D4A02B78E07200220D40 /* UILayer */ = {
+			isa = PBXGroup;
+			children = (
+				A468D4A12B78E0CE00220D40 /* Onboarding */,
+			);
+			path = UILayer;
+			sourceTree = "<group>";
+		};
+		A468D4A12B78E0CE00220D40 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				A468D4A22B78E1B500220D40 /* OnboardingViewController.swift */,
+				A468D4A42B78E2A100220D40 /* OnboardingViewPresenter.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
 		A48ADDE32B7462F100CE38F9 /* ResourcesR */ = {
 			isa = PBXGroup;
 			children = (
@@ -136,6 +157,7 @@
 		A4A3A6EC2B7379B300415CF0 /* FoodDeliveryApp */ = {
 			isa = PBXGroup;
 			children = (
+				A468D4A02B78E07200220D40 /* UILayer */,
 				A48ADDEE2B75FEE700CE38F9 /* NavigationLayer */,
 				A48ADDE32B7462F100CE38F9 /* ResourcesR */,
 				A4A3A6ED2B7379B300415CF0 /* AppDelegate.swift */,
@@ -222,6 +244,7 @@
 				A4A3A6F22B7379B300415CF0 /* ViewController.swift in Sources */,
 				A4A3A6EE2B7379B300415CF0 /* AppDelegate.swift in Sources */,
 				A48ADDE92B7469F200CE38F9 /* UIFont+Extension.swift in Sources */,
+				A468D4A32B78E1B500220D40 /* OnboardingViewController.swift in Sources */,
 				A48ADDED2B75C0EC00CE38F9 /* AppColors.swift in Sources */,
 				A48ADDF42B760BED00CE38F9 /* AppCoordinator.swift in Sources */,
 				A4A3A6F02B7379B300415CF0 /* SceneDelegate.swift in Sources */,
@@ -232,6 +255,7 @@
 				A48ADDF82B76E21500CE38F9 /* HomeCoordinator.swift in Sources */,
 				A48ADE002B76E52F00CE38F9 /* TabBarController.swift in Sources */,
 				A48ADDF62B7629EB00CE38F9 /* OnboardingCoordinator.swift in Sources */,
+				A468D4A52B78E2A100220D40 /* OnboardingViewPresenter.swift in Sources */,
 				A48ADDF22B76001200CE38F9 /* Coordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
