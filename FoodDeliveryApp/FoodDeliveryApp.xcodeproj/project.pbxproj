@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A459C4AD2B79A3DC008F0327 /* OnboardingSwitchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A459C4AC2B79A3DC008F0327 /* OnboardingSwitchViewController.swift */; };
 		A468D4A32B78E1B500220D40 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A468D4A22B78E1B500220D40 /* OnboardingViewController.swift */; };
 		A468D4A52B78E2A100220D40 /* OnboardingViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A468D4A42B78E2A100220D40 /* OnboardingViewPresenter.swift */; };
 		A48ADDE62B7464DC00CE38F9 /* Roboto in Resources */ = {isa = PBXBuildFile; fileRef = A48ADDE52B7464DC00CE38F9 /* Roboto */; };
@@ -29,6 +30,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A459C4AC2B79A3DC008F0327 /* OnboardingSwitchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSwitchViewController.swift; sourceTree = "<group>"; };
 		A468D4A22B78E1B500220D40 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		A468D4A42B78E2A100220D40 /* OnboardingViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewPresenter.swift; sourceTree = "<group>"; };
 		A48ADDE52B7464DC00CE38F9 /* Roboto */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Roboto; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 			children = (
 				A468D4A22B78E1B500220D40 /* OnboardingViewController.swift */,
 				A468D4A42B78E2A100220D40 /* OnboardingViewPresenter.swift */,
+				A459C4AC2B79A3DC008F0327 /* OnboardingSwitchViewController.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -247,6 +250,7 @@
 				A468D4A32B78E1B500220D40 /* OnboardingViewController.swift in Sources */,
 				A48ADDED2B75C0EC00CE38F9 /* AppColors.swift in Sources */,
 				A48ADDF42B760BED00CE38F9 /* AppCoordinator.swift in Sources */,
+				A459C4AD2B79A3DC008F0327 /* OnboardingSwitchViewController.swift in Sources */,
 				A4A3A6F02B7379B300415CF0 /* SceneDelegate.swift in Sources */,
 				A48ADDFA2B76E2BC00CE38F9 /* OrderCoordinator.swift in Sources */,
 				A48ADDEB2B75BE6C00CE38F9 /* UIColor+Extension.swift in Sources */,
