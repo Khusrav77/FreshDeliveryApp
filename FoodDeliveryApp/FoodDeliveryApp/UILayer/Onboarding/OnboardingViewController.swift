@@ -12,13 +12,14 @@ class OnboardingViewController: UIViewController {
     
     // MARK: - Properties
     private var pages = [OnboardingSwitchViewController]()
+    private var currentPageIndex = 0
     
     
     // MARK: - Views
     private var pageViewController = UIPageViewController(transitionStyle: .scroll, navigationOrientation: .horizontal)
     private let pageControl = UIPageControl()
     private let bottomButton = UIButton()
-    weak var viewOutput: OnboadingViewOutput!
+    var viewOutput: OnboadingViewOutput!
     
     init(pages: [OnboardingSwitchViewController] = [OnboardingSwitchViewController](), viewOutput: OnboadingViewOutput) {
         self.pages = pages
@@ -57,6 +58,7 @@ private extension OnboardingViewController {
             bottomButton.setTitle(pages[3].buttonText, for: .normal)
         case 3:
             print("Exit")
+            viewOutput.onboardingFinish()
         default:
             break
         }
@@ -131,13 +133,18 @@ extension OnboardingViewController: UIPageViewControllerDataSource {
 extension OnboardingViewController: UIPageViewControllerDelegate {
     func pageViewController(_ pageViewController: UIPageViewController, willTransitionTo pendingViewControllers: [UIViewController]) {
         if let index = pages.firstIndex(of: pendingViewControllers.first! as! OnboardingSwitchViewController) {
-            pageControl.currentPage = index
-            let page = pages[index]
-            let title = page.buttonText
-            bottomButton.setTitle(title, for: .normal)
-            }
+            currentPageIndex = index
         }
     }
+    func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
+        if completed {
+            pageControl.currentPage = currentPageIndex
+            let page = pages[currentPageIndex]
+            let title = page.buttonText
+            bottomButton.setTitle(title, for: .normal)
+        }
+    }
+}
     
     
 
